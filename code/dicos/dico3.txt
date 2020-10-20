@@ -1,5 +1,4 @@
 2minute	minute
-fawk	fuck
 isweaar	swear
 spiderr	spider
 francesco	francisco
@@ -41179,3 +41178,4 @@ itxted	fitted
 cheeeap	cheap
 fawesome	awesome
 untalented	talented
+fawk	fuck
