@@ -80,3 +80,7 @@ html, body {
     max-height: 250px;
     overflow-y: scroll;
   }
+
+  .dashboard-link a{
+    text-decoration: none;
+  }

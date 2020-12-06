@@ -19,7 +19,7 @@
     <nav class="navbar is-white">
         <div class="container">
             <div class="navbar-brand">
-                <h6 class="navbar-item">Admin Dashboard</h6>
+                <h6 class="navbar-item"><a href='/' class='dashboard-link'>Dashboard</a></h6>
                 <!-- <a class="navbar-item brand-text" href="../index.html">
                     Bulma Admin
                 </a> -->
@@ -107,7 +107,7 @@
                     <div class="hero-body">
                         <div class="container">
                             <h1 class="title">
-                                Hello, Admin.
+                                Hello
                             </h1>
                             <h2 class="subtitle">
                                 Hope you are having a great day!
@@ -120,32 +120,39 @@
                         <div class="tile is-parent">
                             <article class="tile is-child box">
                                 <p class="title">439k</p>
-                                <p class="subtitle">Users</p>
+                                <p class="subtitle">Total Tweets Mined</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
                                 <p class="title">59k</p>
-                                <p class="subtitle">Products</p>
+                                <p class="subtitle">Complaints Detected</p>
                             </article>
                         </div>
+                        <!-- <div class="modal">
+                            <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    Any other Bulma elements you want
+                                </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div> -->
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">3.4k</p>
-                                <p class="subtitle">Open Orders</p>
+                                <a href='/categories'><p class="title">16</p>
+                                <p class="subtitle">Categories</p></a>
                             </article>
                         </div>
-                        <div class="tile is-parent">
+                        <!-- <div class="tile is-parent">
                             <article class="tile is-child box">
                                 <p class="title">19</p>
                                 <p class="subtitle">Exceptions</p>
                             </article>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
-                <div class="columns">
-                    <div class="column is-6">
-                        <div class="card">
+                <div class="rows">
+                    <div class="row is-full">
+                        <!-- <div class="card">
                             <header class="card-header">
                                 <p class="card-header-title">
                                     Tweet Search
@@ -163,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="card events-card">
                             <header class="card-header">
                                 <p class="card-header-title">Recent Tweets</p>
@@ -229,7 +236,7 @@
                             </footer>
                         </div>
                     </div>
-                    <div class="column is-6">
+                    <div class="row is-full">
                         <!-- <div class="card">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -256,10 +263,142 @@
                                     Tweet Dataset Graph
                                 </p>
                             </header>
-                            <div class="card-content">
-                                <div class="content">
-                                    <img src='../static/images/plot.png'>
+                            <div class="rows">
+
+                                <div class='row'>
+                                    <div class='columns'>
+                                        <div class='column is-6'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot1.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='column is-6'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot4.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class='row'>
+                                    <div class='columns'>
+                                        <div class='column is-full'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot2.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='row'>
+                                    <div class='columns'>
+                                        <div class='column is-full'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot3.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class='row'>
+                                    <div class='columns'>
+                                        <div class='column is-6'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot4.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='column is-6'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot5.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class='row'>
+                                    <div class='columns'>
+                                        <div class='column is-6'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot5.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='column is-6'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot6.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Algorithms
+                                </p>
+                            </header>
+                            <div class="rows">
+                                <div class='columns'>
+                                    <div class='column is-full'>
+                                        <div class="column is-12">
+                                            <div class="card events-card">
+                                                <!-- <div class="card-table"> -->
+                                                    <div class="content">
+                                                        <table class="table is-fullwidth is-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                  <th><abbr title="Algorithm">Algorithm</abbr></th>
+                                                                  <th><abbr title="Accuracy - Complaint Classification">Accuracy - Complaint Classification</abbr></th>
+                                                                  <th><abbr title="Accuracy - Category Classification">Accuracy - Category Classification</abbr></th>
+                                                                </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                <tr>
+                                                                  <th>K Neighbors</th>
+                                                                  <td>85.54</td>
+                                                                  <td>85.54</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Decision Tree</th>
+                                                                    <td>86.72</td>
+                                                                    <td>85.48</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>Random Forest</th>
+                                                                    <td>85.6</td>
+                                                                    <td>85.6</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>SGD</th>
+                                                                    <td>88.13</td>
+                                                                    <td>86.72</td>
+                                                                </tr>
+                                                               </tbody>
+                                                        </table>
+                                                    </div>
+                                                <!-- </div> -->
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             
                             </div>
                         </div>
                     </div>
