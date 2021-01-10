@@ -119,13 +119,13 @@
                     <div class="tile is-ancestor has-text-centered">
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">439k</p>
+                                <p class="title">{{ tweets }}</p>
                                 <p class="subtitle">Total Tweets Mined</p>
                             </article>
                         </div>
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <p class="title">59k</p>
+                                <p class="title">{{ complaints }}</p>
                                 <p class="subtitle">Complaints Detected</p>
                             </article>
                         </div>
@@ -138,7 +138,7 @@
                         </div> -->
                         <div class="tile is-parent">
                             <article class="tile is-child box">
-                                <a href='/categories'><p class="title">16</p>
+                                <a href='/categories'><p class="title">17</p>
                                 <p class="subtitle">Categories</p></a>
                             </article>
                         </div>
@@ -182,51 +182,13 @@
                                 <div class="content">
                                     <table class="table is-fullwidth is-striped">
                                         <tbody>
+                                            {% for i in range(tweetText|length) %}
                                             <tr>
                                                 <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
+                                                <td style="width: 70%">{{ tweetText[i] }}</td>
+                                                <td class="level-right"><a class="button is-small is-primary" href="/tweetDetails/{{ i }}">View</a></td>
                                             </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td width="5%"><i class="fa fa-bell-o"></i></td> -->
-                                                <td>Lorum ipsum dolem aire</td>
-                                                <td class="level-right"><a class="button is-small is-primary" href="#">View</a></td>
-                                            </tr>
+                                            {% endfor %}
                                         </tbody>
                                     </table>
                                 </div>
@@ -277,18 +239,6 @@
                                         <div class='column is-6'>
                                             <div class="card-content">
                                                 <div class="content">
-                                                    <img src='../static/images/plot4.png'>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class='row'>
-                                    <div class='columns'>
-                                        <div class='column is-full'>
-                                            <div class="card-content">
-                                                <div class="content">
                                                     <img src='../static/images/plot2.png'>
                                                 </div>
                                             </div>
@@ -302,6 +252,18 @@
                                             <div class="card-content">
                                                 <div class="content">
                                                     <img src='../static/images/plot3.png'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='row'>
+                                    <div class='columns'>
+                                        <div class='column is-full'>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <img src='../static/images/plot4.png'>
                                                 </div>
                                             </div>
                                         </div>
