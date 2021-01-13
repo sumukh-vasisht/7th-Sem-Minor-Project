@@ -38,22 +38,6 @@ categoriesData = {
         '17': 'Gas'
     }
 
-data = {'KA':27, 'TN':15, 'AP':32,  
-        'MH':35, 'GJ':47, 'AS': 12,
-        'KL':41, 'MP':22, 'UP': 11,
-        'ArP':27, 'DL':15, 'GA':32,  
-        'RJ':35, 'PJ':47, 'UK': 12,
-        'JK':41, 'HP':22, 'HR': 11} 
-categories = list(data.keys()) 
-number = list(data.values()) 
-fig = plt.figure(figsize = (12, 5)) 
-plt.bar(categories, number, color ='blue',  width = 0.4)   
-plt.xlabel("States") 
-plt.ylabel("No. of complaints") 
-plt.title("States vs. number of complaints")
-fig.savefig('static/images/plot3.png')
-plt.figure()
-
 def generateCNCPie(df):
     plt.figure()
     total = df['tweet'].count()
